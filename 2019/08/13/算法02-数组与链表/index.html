@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="算法图解,">
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="SenSe-HJ">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="数组和链表是用来整合多个数据的两种最基本的数据结构。 1. 首先要内存的工作原理 计算机就像一个大礼堂，而每一个数据就像一个人。内存的工作就是给每个人安排位置（即数据的内存地址）。  2. 在明确内存的工作原理后，则要了解数组与链表各自的结构特点2.1 数组的结构特点数组就像一个细心的妈妈，里面的每个数据都是她的孩子。所以数组对其数据“管教”的比较严。  数组中各数据必须坐在一起。（内存地址相邻）">
+<meta name="keywords" content="算法图解">
+<meta property="og:type" content="article">
+<meta property="og:title" content="算法图解：二、数组与链表">
+<meta property="og:url" content="http://yoursite.com/2019/08/13/算法02-数组与链表/index.html">
 <meta property="og:site_name" content="SenSe-HJ">
+<meta property="og:description" content="数组和链表是用来整合多个数据的两种最基本的数据结构。 1. 首先要内存的工作原理 计算机就像一个大礼堂，而每一个数据就像一个人。内存的工作就是给每个人安排位置（即数据的内存地址）。  2. 在明确内存的工作原理后，则要了解数组与链表各自的结构特点2.1 数组的结构特点数组就像一个细心的妈妈，里面的每个数据都是她的孩子。所以数组对其数据“管教”的比较严。  数组中各数据必须坐在一起。（内存地址相邻）">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-08-13T03:08:21.377Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SenSe-HJ">
+<meta name="twitter:title" content="算法图解：二、数组与链表">
+<meta name="twitter:description" content="数组和链表是用来整合多个数据的两种最基本的数据结构。 1. 首先要内存的工作原理 计算机就像一个大礼堂，而每一个数据就像一个人。内存的工作就是给每个人安排位置（即数据的内存地址）。  2. 在明确内存的工作原理后，则要了解数组与链表各自的结构特点2.1 数组的结构特点数组就像一个细心的妈妈，里面的每个数据都是她的孩子。所以数组对其数据“管教”的比较严。  数组中各数据必须坐在一起。（内存地址相邻）">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/08/13/算法02-数组与链表/">
 
 
 
 
 
-  <title>SenSe-HJ</title>
+  <title>算法图解：二、数组与链表 | SenSe-HJ</title>
   
 
 
@@ -140,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <a href="https://github.com/SenSe-HJ" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
@@ -226,386 +230,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/13/算法01-算法运行时间/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="HJ">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/header.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SenSe-HJ">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/13/算法01-算法运行时间/" itemprop="url">算法图解：一、算法运行时间</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-13T10:45:39+08:00">
-                2019-08-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/算法图解/" itemprop="url" rel="index">
-                    <span itemprop="name">算法图解</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="1-首先要明确算法与代码之间的关系："><a href="#1-首先要明确算法与代码之间的关系：" class="headerlink" title="1. 首先要明确算法与代码之间的关系："></a>1. 首先要明确算法与代码之间的关系：</h3><ul>
-<li>算法即计算方法，是用于解决某类问题的<strong>指导思想</strong>，这是一个<strong>抽象</strong>的概念。</li>
-<li>代码则是解决某个具体问题的<strong>具体措施</strong>，它可以认为是算法的具体表现，这是一个<strong>具体</strong>的概念。</li>
-<li>算法与代码的关系可以认为是Python中<strong>类对象与实例对象的关系</strong>。</li>
-</ul>
-<h3 id="2-在明确算法与代码的关系后，则要明确算法运行时间与代码运行时间的关系："><a href="#2-在明确算法与代码的关系后，则要明确算法运行时间与代码运行时间的关系：" class="headerlink" title="2. 在明确算法与代码的关系后，则要明确算法运行时间与代码运行时间的关系："></a>2. 在明确算法与代码的关系后，则要明确算法运行时间与代码运行时间的关系：</h3><ul>
-<li>代码运行时间是一个<strong>具体</strong>的概念。即确定操作数后，<strong>执行该代码所需要花费的时间</strong>。</li>
-<li>算法运行时间是一个<strong>抽象</strong>的概念。即随着操作数的增加，代码运行时间的<strong>增加速度</strong>。</li>
-<li><strong>注释：</strong>操作数指的是代码所需要处理的元素数量。</li>
-</ul>
-<h3 id="3-在确定算法运行时间的概念后，则要对算法运行时间这一抽象概念进行描述。这里我们一般采用大O表示法"><a href="#3-在确定算法运行时间的概念后，则要对算法运行时间这一抽象概念进行描述。这里我们一般采用大O表示法" class="headerlink" title="3. 在确定算法运行时间的概念后，则要对算法运行时间这一抽象概念进行描述。这里我们一般采用大O表示法"></a>3. 在确定算法运行时间的概念后，则要对算法运行时间这一抽象概念进行描述。这里我们一般采用<strong>大O表示法</strong></h3><h4 id="大O表示法描述的是：最不利情况下，代码运行时间与操作数之间的函数类型"><a href="#大O表示法描述的是：最不利情况下，代码运行时间与操作数之间的函数类型" class="headerlink" title="大O表示法描述的是：最不利情况下，代码运行时间与操作数之间的函数类型"></a>大O表示法描述的是：<strong>最不利情况下</strong>，代码运行时间与操作数之间的<strong>函数类型</strong></h4><p>概念解释如下：</p>
-<ul>
-<li>最不利情况是指：</li>
-<li>函数类型指的是：我们不关心“代码运行时间-操作数”函数的具体表达式，只关心该函数的函数类型，如<strong>直线型、指数型、对数型等</strong>。</li>
-</ul>
-<h3 id="4-在明确大O表示法后，则要了解一些常见的大O运行时间"><a href="#4-在明确大O表示法后，则要了解一些常见的大O运行时间" class="headerlink" title="4. 在明确大O表示法后，则要了解一些常见的大O运行时间"></a>4. 在明确大O表示法后，则要了解一些常见的大O运行时间</h3><ul>
-<li>O( log n )，即对数时间。代表算法——“二分查找”</li>
-<li>O( n )，即线性时间。代表算法——“简单查找”</li>
-<li>O( n * log n )</li>
-<li>O( n<sup>2 )</sup></li>
-<li>O( n! )</li>
-<li>O( 1 ),即常量时间</li>
-<li>注意：在算法内容中<strong>log n 均表示为log<sub>2</sub> n</strong></li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/13/算法05-散列表/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="HJ">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/header.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SenSe-HJ">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/13/算法05-散列表/" itemprop="url">算法图解：五、散列表</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-13T10:45:39+08:00">
-                2019-08-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/算法图解/" itemprop="url" rel="index">
-                    <span itemprop="name">算法图解</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="一、散列表的构成"><a href="#一、散列表的构成" class="headerlink" title="一、散列表的构成"></a>一、散列表的构成</h2><p>散列表是<strong>由散列函数与数组组合而成的</strong>。</p>
-<p>散列表的工作原理（流程）如下：</p>
-<ul>
-<li>键（key）输入到散列函数中，得到<strong>唯一的散列值</strong>（唯一是理想情况下）；</li>
-<li>将这个散列值<strong>作为数组的索引</strong>；</li>
-<li>通过索引和数组的存储地址，可以找到<strong>唯一的内存地址</strong>，从而进行值（value）的相关操作。</li>
-</ul>
-<h2 id="二、散列表的用途"><a href="#二、散列表的用途" class="headerlink" title="二、散列表的用途"></a>二、散列表的用途</h2><h3 id="2-1-用于查找（最基础的用途）"><a href="#2-1-用于查找（最基础的用途）" class="headerlink" title="2.1 用于查找（最基础的用途）"></a>2.1 用于查找（最基础的用途）</h3><p>由于散列表的工作原理，在<strong>平均情况下</strong>散列表的<strong>查找时间并不会随操作数的增加而增加</strong>，故散列表的速度为<strong>O(1)</strong>。<br><br>故散列表<strong>很适合于随机查找</strong>。<br></p>
-<p>散列表、数组、链表运行速度汇总如下：</p>
-<table>
-<thead>
-<tr>
-<th align="center"></th>
-<th align="center">散列表（平均情况）</th>
-<th align="center">散列表（最糟糕情况）</th>
-<th align="center">数组</th>
-<th align="center">链表</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">查找</td>
-<td align="center">O(1)</td>
-<td align="center">O(n)</td>
-<td align="center">O(1)</td>
-<td align="center">o(n)</td>
-</tr>
-<tr>
-<td align="center">插入</td>
-<td align="center">O(1)</td>
-<td align="center">O(n)</td>
-<td align="center">O(n)</td>
-<td align="center">O(1)</td>
-</tr>
-<tr>
-<td align="center">删除</td>
-<td align="center">O(1)</td>
-<td align="center">O(n)</td>
-<td align="center">O(n)</td>
-<td align="center">O(1)</td>
-</tr>
-</tbody></table>
-<h3 id="2-2-用于网页缓存数据"><a href="#2-2-用于网页缓存数据" class="headerlink" title="2.2 用于网页缓存数据"></a>2.2 用于网页缓存数据</h3><p>首先简单介绍下“缓存”这个概念。</p>
-<ul>
-<li>对于常用的数据，本地（客户端）先保存下来（即缓存）；</li>
-<li>当访问本地保存的数据时，不需要访问服务端来获取相关数据，而直接从本地读取；</li>
-<li>而对于非本地保存的数据，再访问服务端来获取相关数据。</li>
-</ul>
-<p>而<strong>缓存的数据一般存储于散列表中</strong>，方便进行随机查找。<br>也就是说缓存数据是基于<strong>散列表查找性能好</strong>而升华的用途</p>
-<h3 id="2-3-用于检查是否重复"><a href="#2-3-用于检查是否重复" class="headerlink" title="2.3 用于检查是否重复"></a>2.3 用于检查是否重复</h3><p>由于散列表中的键（key）具有<strong>唯一的</strong>散列值的；<br>所以可以通过<strong>检查某个内容是否存在于散列表中</strong>，从而判定该项内容是否重复。</p>
-<h2 id="三、散列表的冲突问题"><a href="#三、散列表的冲突问题" class="headerlink" title="三、散列表的冲突问题"></a>三、散列表的冲突问题</h2><p>散列表的冲突问题指的是：</p>
-<ul>
-<li>由于<strong>不是</strong>每个散列函数都可以实现<strong>“输入值与散列值一一对应”</strong></li>
-<li>若不同键具有相同的散列值，则它们<strong>对应的内存地址相同</strong></li>
-<li>这就导致了具有相同散列值的键会<strong>覆盖</strong>前者键对应的值</li>
-<li>如A与B具有相同的散列值，则B=b会覆盖掉原来的A=a</li>
-</ul>
-<p>解决冲突问题的<strong>最简单方法</strong>是：</p>
-<ul>
-<li>如果两个键映射到同一个位置，则在这个位置<strong>存储成一个链表</strong></li>
-</ul>
-<p>但这样做，可能会形成散列表<strong>最糟糕的情况</strong></p>
-<ul>
-<li>即<strong>所有键的散列值均相同，映射至同一个地方</strong>；</li>
-<li>这样子的散列表其实就就是<strong>链表披着数组的皮</strong>，实际就是个链表。</li>
-</ul>
-<h2 id="四、散列表的性能"><a href="#四、散列表的性能" class="headerlink" title="四、散列表的性能"></a>四、散列表的性能</h2><p>散列表<strong>产生冲突的概率及解决冲突的方法</strong>决定了散列表的性能，故散列表的性能受以下三个因素影响：</p>
-<ul>
-<li><strong>散列函数</strong>：<br><br>良好的散列函数，可以使大多数的键对应的散列值是唯一的，可以有效避免冲突的产生；</li>
-<li><strong>装填因子</strong>:<br><br>装填因子=散列表包含的元素个数/散列表中位置总数，即<strong>表示散列表中元素的装满程度</strong>；<br><br>故<strong>装填因子越低，发生冲突的可能性越小</strong>；<br><br>（装填因子越低，散列表中的空位越多，键映射到空位的概率越大，发生的冲突的可能性则越小）<br>一个不错的经验规则：<strong>一旦填装因子大于0.7，就调整散列表的长度</strong>。</li>
-<li><strong>处理冲突的方法</strong>：<br></li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -635,9 +262,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/13/算法02-数组与链表/" itemprop="url">算法图解：二、数组与链表</a></h1>
+          <h1 class="post-title" itemprop="name headline">算法图解：二、数组与链表</h1>
         
 
         <div class="post-meta">
@@ -709,9 +334,7 @@
       
 
       
-        
-          
-            <p>数组和链表是用来<strong>整合多个数据</strong>的两种最基本的<strong>数据结构</strong>。</p>
+        <p>数组和链表是用来<strong>整合多个数据</strong>的两种最基本的<strong>数据结构</strong>。</p>
 <h3 id="1-首先要内存的工作原理"><a href="#1-首先要内存的工作原理" class="headerlink" title="1. 首先要内存的工作原理"></a>1. 首先要内存的工作原理</h3><ul>
 <li>计算机就像一个大礼堂，而每一个数据就像一个人。内存的工作就是<strong>给每个人安排位置</strong>（即数据的内存地址）。</li>
 </ul>
@@ -761,8 +384,6 @@
 </ul>
 <p>由上表可以看出，<strong>数组在读取方面有优势，而链表在删除和插入方面有优势。</strong>实际情况中经常<strong>要求随机访问，故常用数组。</strong></p>
 
-          
-        
       
     </div>
     
@@ -777,14 +398,36 @@
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/算法图解/" rel="tag"># 算法图解</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/08/13/算法05-散列表/" rel="prev" title="算法图解：五、散列表">
+                算法图解：五、散列表 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -794,10 +437,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -805,6 +449,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -825,8 +473,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -888,6 +545,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-首先要内存的工作原理"><span class="nav-number">1.</span> <span class="nav-text">1. 首先要内存的工作原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-在明确内存的工作原理后，则要了解数组与链表各自的结构特点"><span class="nav-number">2.</span> <span class="nav-text">2. 在明确内存的工作原理后，则要了解数组与链表各自的结构特点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-数组的结构特点"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 数组的结构特点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-链表的结构特别"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 链表的结构特别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-在明确两者的结构特点后，则要了解二者在读取、插入、删除等操作下的运行时间"><span class="nav-number">3.</span> <span class="nav-text">3.在明确两者的结构特点后，则要了解二者在读取、插入、删除等操作下的运行时间</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1028,6 +701,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
