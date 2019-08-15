@@ -12,6 +12,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
+<script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("https://evenyao.com"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
 
 
 
@@ -82,14 +96,14 @@
 <meta name="description" content="数组和链表是用来整合多个数据的两种最基本的数据结构。 1. 首先要内存的工作原理 计算机就像一个大礼堂，而每一个数据就像一个人。内存的工作就是给每个人安排位置（即数据的内存地址）。  2. 在明确内存的工作原理后，则要了解数组与链表各自的结构特点2.1 数组的结构特点数组就像一个细心的妈妈，里面的每个数据都是她的孩子。所以数组对其数据“管教”的比较严。  数组中各数据必须坐在一起。（内存地址相邻）">
 <meta name="keywords" content="算法图解">
 <meta property="og:type" content="article">
-<meta property="og:title" content="算法图解2：数组与链表">
+<meta property="og:title" content="算法图解02：数组与链表">
 <meta property="og:url" content="http://yoursite.com/2019/08/11/算法02-数组与链表/index.html">
 <meta property="og:site_name" content="SenSe-HJ">
 <meta property="og:description" content="数组和链表是用来整合多个数据的两种最基本的数据结构。 1. 首先要内存的工作原理 计算机就像一个大礼堂，而每一个数据就像一个人。内存的工作就是给每个人安排位置（即数据的内存地址）。  2. 在明确内存的工作原理后，则要了解数组与链表各自的结构特点2.1 数组的结构特点数组就像一个细心的妈妈，里面的每个数据都是她的孩子。所以数组对其数据“管教”的比较严。  数组中各数据必须坐在一起。（内存地址相邻）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-15T02:08:34.801Z">
+<meta property="og:updated_time" content="2019-08-15T07:40:44.777Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="算法图解2：数组与链表">
+<meta name="twitter:title" content="算法图解02：数组与链表">
 <meta name="twitter:description" content="数组和链表是用来整合多个数据的两种最基本的数据结构。 1. 首先要内存的工作原理 计算机就像一个大礼堂，而每一个数据就像一个人。内存的工作就是给每个人安排位置（即数据的内存地址）。  2. 在明确内存的工作原理后，则要了解数组与链表各自的结构特点2.1 数组的结构特点数组就像一个细心的妈妈，里面的每个数据都是她的孩子。所以数组对其数据“管教”的比较严。  数组中各数据必须坐在一起。（内存地址相邻）">
 
 
@@ -126,7 +140,15 @@
 
 
 
-  <title>算法图解2：数组与链表 | SenSe-HJ</title>
+<link rel="stylesheet" href="<%- url_for('/fa-brands/css/fa-brands.min.css') %>">
+<link rel="stylesheet" href="<%- url_for('/fa-regular/css/fa-regular.min.css') %>">
+<link rel="stylesheet" href="<%- url_for('/fa-solid/css/fa-solid.min.css') %>">
+<link rel="stylesheet" href="<%- url_for('/fontawesome/css/fontawesome.min.css') %>">
+<link rel="stylesheet" href="<%- url_for('/fontawesome-all/css/fontawesome-all.css') %>">
+
+<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+  <title>算法图解02：数组与链表 | SenSe-HJ</title>
   
 
 
@@ -212,6 +234,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-python">
+          <a href="/python/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-<i class=" fab fa-python"></i>"> <br>
+            
+            python
+          </a>
+        </li>
+      
 
       
     </ul>
@@ -262,7 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">算法图解2：数组与链表</h1>
+          <h1 class="post-title" itemprop="name headline">算法图解02：数组与链表</h1>
         
 
         <div class="post-meta">
@@ -345,6 +377,8 @@
 <li>以<strong>第一个数据的内存地址作为数组的存储地址</strong>，之后便可<strong>利用存储地址与索引</strong>确定每个数据的内存地址</li>
 <li>在给数据<strong>新增元素后</strong>，若相邻的位置<strong>被其他数据先占</strong>了，则数组要带着它的全体数据<strong>转移</strong>至另一个放得下它们一群人的位置。<strong>【这是数组的最大缺点】</strong></li>
 </ul>
+<a id="more"></a>
+
 <h4 id="2-2-链表的结构特别"><a href="#2-2-链表的结构特别" class="headerlink" title="2.2 链表的结构特别"></a>2.2 链表的结构特别</h4><p>链表就像一个心比较大的爸爸，所以对数据的<strong>“管教”比较松</strong>。</p>
 <ul>
 <li>链表中的各数据不需要坐在一起。<strong>【不同点】</strong></li>
@@ -396,6 +430,15 @@
 
     
 
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------　　　　本文结束　<i class="fa fa-heart"></i>　感谢您的阅读 <i class="fa fa-heart"></i> 若有不足请指教　　　　-------------</div>
+
+      
+    </div>
+
     <footer class="post-footer">
       
         <div class="post-tags">
@@ -438,7 +481,7 @@
   
   
   
-  </article>
+  </div></article>
 
 
 
@@ -537,6 +580,22 @@
           
 
           
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/SenSe-HJ" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/qq_37111647" target="_blank" title="CSDN">
+                      
+                        <i class="fa fa-fw fa-ioxhost"></i>CSDN</a>
+                  </span>
+                
+            </div>
+          
 
           
           
@@ -544,7 +603,7 @@
           
           
 
-          
+          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=437392&auto=0&height=66"></iframe>
 
         </div>
       </section>
@@ -579,7 +638,14 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共3.2k字</span>
+</div>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -589,16 +655,11 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
-
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
 
 
 

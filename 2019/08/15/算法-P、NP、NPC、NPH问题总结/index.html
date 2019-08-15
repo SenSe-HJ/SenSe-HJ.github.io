@@ -12,6 +12,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
+<script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("https://evenyao.com"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
 
 
 
@@ -87,7 +101,7 @@
 <meta property="og:site_name" content="SenSe-HJ">
 <meta property="og:description" content="铺垫1：多项式函数形如a0xn+a1xn-1+a2xn-2+…+an-1x+an式子即称为x最高次为n的多项式。 铺垫2：多项式时间多项式时间即代码运行时间与操作数的函数关系为多项式函数 ，用大O表示为：O(a0ns+a1ns-1+…+as-1n+as)但考虑到随着操作数的增多（一般计算处理的操作数就是特别多），s-1、s-2…0次等项对代码运行时间的增幅影响很小（因为ns增长太快了），故可大O表">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-15T02:07:10.756Z">
+<meta property="og:updated_time" content="2019-08-15T07:41:08.657Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法图解番外篇：P、NP、NPC、NPH问题汇总">
 <meta name="twitter:description" content="铺垫1：多项式函数形如a0xn+a1xn-1+a2xn-2+…+an-1x+an式子即称为x最高次为n的多项式。 铺垫2：多项式时间多项式时间即代码运行时间与操作数的函数关系为多项式函数 ，用大O表示为：O(a0ns+a1ns-1+…+as-1n+as)但考虑到随着操作数的增多（一般计算处理的操作数就是特别多），s-1、s-2…0次等项对代码运行时间的增幅影响很小（因为ns增长太快了），故可大O表">
@@ -125,6 +139,14 @@
 
 
 
+
+<link rel="stylesheet" href="<%- url_for('/fa-brands/css/fa-brands.min.css') %>">
+<link rel="stylesheet" href="<%- url_for('/fa-regular/css/fa-regular.min.css') %>">
+<link rel="stylesheet" href="<%- url_for('/fa-solid/css/fa-solid.min.css') %>">
+<link rel="stylesheet" href="<%- url_for('/fontawesome/css/fontawesome.min.css') %>">
+<link rel="stylesheet" href="<%- url_for('/fontawesome-all/css/fontawesome-all.css') %>">
+
+<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 
   <title>算法图解番外篇：P、NP、NPC、NPH问题汇总 | SenSe-HJ</title>
   
@@ -209,6 +231,16 @@
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-python">
+          <a href="/python/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-<i class=" fab fa-python"></i>"> <br>
+            
+            python
           </a>
         </li>
       
@@ -336,6 +368,8 @@
       
         <h3 id="铺垫1：多项式函数"><a href="#铺垫1：多项式函数" class="headerlink" title="铺垫1：多项式函数"></a>铺垫1：多项式函数</h3><p>形如<strong>a<sub>0</sub>x<sup>n</sup>+a<sub>1</sub>x<sup>n-1</sup>+a<sub>2</sub>x<sup>n-2</sup>+…+a<sub>n-1</sub>x+a<sub>n</sub></strong><br>式子即称为<strong>x最高次为n的多项式</strong>。</p>
 <h3 id="铺垫2：多项式时间"><a href="#铺垫2：多项式时间" class="headerlink" title="铺垫2：多项式时间"></a>铺垫2：多项式时间</h3><p>多项式时间即<strong>代码运行时间与操作数的函数关系为多项式函数</strong> ，用大O表示为：O(a<sub>0</sub>n<sup>s</sup>+a<sub>1</sub>n<sup>s-1</sup>+…+a<sub>s-1</sub>n+a<sub>s</sub>)<br>但考虑到<strong>随着操作数的增多</strong>（一般计算处理的操作数就是特别多），<strong>s-1、s-2…0次等项对代码运行时间的增幅影响很小</strong>（因为n<sup>s</sup>增长太快了），故可大O表示法简化为<strong>O（n<sup>s</sup>）</strong><br><br>即<strong>O(a<sub>0</sub>n<sup>s</sup>+a<sub>1</sub>n<sup>s-1</sup>+…+a<sub>s-1</sub>n+a<sub>s</sub>)=O（n<sup>s</sup>）</strong></p>
+<a id="more"></a>
+
 <h3 id="一、P问题（Polynominal-Problem）（多项式问题）"><a href="#一、P问题（Polynominal-Problem）（多项式问题）" class="headerlink" title="一、P问题（Polynominal Problem）（多项式问题）"></a>一、P问题（Polynominal Problem）（多项式问题）</h3><p><strong>定义：存在多项式时间算法的问题</strong></p>
 <h3 id="二、NP问题（Nondeterministic-polynominal-Problem）（非确定性多项式问题）"><a href="#二、NP问题（Nondeterministic-polynominal-Problem）（非确定性多项式问题）" class="headerlink" title="二、NP问题（Nondeterministic polynominal Problem）（非确定性多项式问题）"></a>二、NP问题（Nondeterministic polynominal Problem）（非确定性多项式问题）</h3><p><strong>定义：能在多项式时间内验证的问题</strong></p>
 <p><strong>解读：</strong>即给你一个答案，你可以<strong>验证它是否为该问题的答案</strong></p>
@@ -376,6 +410,15 @@
 
     
 
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------　　　　本文结束　<i class="fa fa-heart"></i>　感谢您的阅读 <i class="fa fa-heart"></i> 若有不足请指教　　　　-------------</div>
+
+      
+    </div>
+
     <footer class="post-footer">
       
         <div class="post-tags">
@@ -414,7 +457,7 @@
   
   
   
-  </article>
+  </div></article>
 
 
 
@@ -513,6 +556,22 @@
           
 
           
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/SenSe-HJ" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/qq_37111647" target="_blank" title="CSDN">
+                      
+                        <i class="fa fa-fw fa-ioxhost"></i>CSDN</a>
+                  </span>
+                
+            </div>
+          
 
           
           
@@ -520,7 +579,7 @@
           
           
 
-          
+          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=437392&auto=0&height=66"></iframe>
 
         </div>
       </section>
@@ -555,7 +614,14 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共3.2k字</span>
+</div>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -565,16 +631,11 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
-
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
 
 
 

@@ -12,6 +12,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
+<script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("https://evenyao.com"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
 
 
 
@@ -87,7 +101,7 @@
 <meta property="og:site_name" content="SenSe-HJ">
 <meta property="og:description" content="一、散列表的构成散列表是由散列函数与数组组合而成的。 散列表的工作原理（流程）如下：  键（key）输入到散列函数中，得到唯一的散列值（唯一是理想情况下）； 将这个散列值作为数组的索引； 通过索引和数组的存储地址，可以找到唯一的内存地址，从而进行值（value）的相关操作。  二、散列表的用途2.1 用于查找（最基础的用途）由于散列表的工作原理，在平均情况下散列表的查找时间并不会随操作数的增加而增">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-15T02:08:56.388Z">
+<meta property="og:updated_time" content="2019-08-15T07:40:58.772Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法图解05：散列表">
 <meta name="twitter:description" content="一、散列表的构成散列表是由散列函数与数组组合而成的。 散列表的工作原理（流程）如下：  键（key）输入到散列函数中，得到唯一的散列值（唯一是理想情况下）； 将这个散列值作为数组的索引； 通过索引和数组的存储地址，可以找到唯一的内存地址，从而进行值（value）的相关操作。  二、散列表的用途2.1 用于查找（最基础的用途）由于散列表的工作原理，在平均情况下散列表的查找时间并不会随操作数的增加而增">
@@ -125,6 +139,14 @@
 
 
 
+
+<link rel="stylesheet" href="<%- url_for('/fa-brands/css/fa-brands.min.css') %>">
+<link rel="stylesheet" href="<%- url_for('/fa-regular/css/fa-regular.min.css') %>">
+<link rel="stylesheet" href="<%- url_for('/fa-solid/css/fa-solid.min.css') %>">
+<link rel="stylesheet" href="<%- url_for('/fontawesome/css/fontawesome.min.css') %>">
+<link rel="stylesheet" href="<%- url_for('/fontawesome-all/css/fontawesome-all.css') %>">
+
+<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 
   <title>算法图解05：散列表 | SenSe-HJ</title>
   
@@ -209,6 +231,16 @@
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-python">
+          <a href="/python/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-<i class=" fab fa-python"></i>"> <br>
+            
+            python
           </a>
         </li>
       
@@ -342,6 +374,8 @@
 <li>通过索引和数组的存储地址，可以找到<strong>唯一的内存地址</strong>，从而进行值（value）的相关操作。</li>
 </ul>
 <h2 id="二、散列表的用途"><a href="#二、散列表的用途" class="headerlink" title="二、散列表的用途"></a>二、散列表的用途</h2><h3 id="2-1-用于查找（最基础的用途）"><a href="#2-1-用于查找（最基础的用途）" class="headerlink" title="2.1 用于查找（最基础的用途）"></a>2.1 用于查找（最基础的用途）</h3><p>由于散列表的工作原理，在<strong>平均情况下</strong>散列表的<strong>查找时间并不会随操作数的增加而增加</strong>，故散列表的速度为<strong>O(1)</strong>。<br><br>故散列表<strong>很适合于随机查找</strong>。<br></p>
+<a id="more"></a>
+
 <p>散列表、数组、链表运行速度汇总如下：</p>
 <table>
 <thead>
@@ -418,6 +452,15 @@
 
     
 
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------　　　　本文结束　<i class="fa fa-heart"></i>　感谢您的阅读 <i class="fa fa-heart"></i> 若有不足请指教　　　　-------------</div>
+
+      
+    </div>
+
     <footer class="post-footer">
       
         <div class="post-tags">
@@ -435,8 +478,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/11/算法02-数组与链表/" rel="next" title="算法图解2：数组与链表">
-                <i class="fa fa-chevron-left"></i> 算法图解2：数组与链表
+              <a href="/2019/08/11/算法02-数组与链表/" rel="next" title="算法图解02：数组与链表">
+                <i class="fa fa-chevron-left"></i> 算法图解02：数组与链表
               </a>
             
           </div>
@@ -460,7 +503,7 @@
   
   
   
-  </article>
+  </div></article>
 
 
 
@@ -559,6 +602,22 @@
           
 
           
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/SenSe-HJ" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/qq_37111647" target="_blank" title="CSDN">
+                      
+                        <i class="fa fa-fw fa-ioxhost"></i>CSDN</a>
+                  </span>
+                
+            </div>
+          
 
           
           
@@ -566,7 +625,7 @@
           
           
 
-          
+          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=437392&auto=0&height=66"></iframe>
 
         </div>
       </section>
@@ -601,7 +660,14 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共3.2k字</span>
+</div>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -611,16 +677,11 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
-
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
 
 
 
