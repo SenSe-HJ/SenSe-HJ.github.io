@@ -82,7 +82,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="python提升,">
 
 
 
@@ -93,14 +93,22 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="&#39;tags&#39;">
-<meta property="og:url" content="https://github.com/SenSe-HJ/tags/index.html">
+<meta name="description" content="问题详述：在使用tkinter模块创建多个窗口时，在窗口内容代码没有错误的前提下，除第一个窗口外其他窗口显示异常如本来想依次生成这样子两个窗口：   但实际第二个窗口长这样：  产生该问题的原因：产生这种问题是因为前一个窗口只是退出（quit），但没有销毁（destroy）。没有销毁前一个窗口，则会引起后一个窗口异常。 解决方法：在窗口代码的末尾输入代码“窗口名.destroy()”来销毁窗口 1">
+<meta name="keywords" content="python提升">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python问题：tkinter多窗口显示异常">
+<meta property="og:url" content="https://github.com/SenSe-HJ/python问题：tkinter多窗口显示异常">
 <meta property="og:site_name" content="SenSe-HJ">
+<meta property="og:description" content="问题详述：在使用tkinter模块创建多个窗口时，在窗口内容代码没有错误的前提下，除第一个窗口外其他窗口显示异常如本来想依次生成这样子两个窗口：   但实际第二个窗口长这样：  产生该问题的原因：产生这种问题是因为前一个窗口只是退出（quit），但没有销毁（destroy）。没有销毁前一个窗口，则会引起后一个窗口异常。 解决方法：在窗口代码的末尾输入代码“窗口名.destroy()”来销毁窗口 1">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-12T17:50:48.888Z">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/bcf17fd9gy1g66mhoyxzrj20qg0gh772.jpg">
+<meta property="og:image" content="http://wx2.sinaimg.cn/mw690/bcf17fd9gy1g66mhq4tyij20in027wf4.jpg">
+<meta property="og:image" content="http://wx2.sinaimg.cn/mw690/bcf17fd9gy1g66mhpjbwwj20ie0253z5.jpg">
+<meta property="og:updated_time" content="2019-08-20T17:48:10.940Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="&#39;tags&#39;">
+<meta name="twitter:title" content="python问题：tkinter多窗口显示异常">
+<meta name="twitter:description" content="问题详述：在使用tkinter模块创建多个窗口时，在窗口内容代码没有错误的前提下，除第一个窗口外其他窗口显示异常如本来想依次生成这样子两个窗口：   但实际第二个窗口长这样：  产生该问题的原因：产生这种问题是因为前一个窗口只是退出（quit），但没有销毁（destroy）。没有销毁前一个窗口，则会引起后一个窗口异常。 解决方法：在窗口代码的末尾输入代码“窗口名.destroy()”来销毁窗口 1">
+<meta name="twitter:image" content="http://wx3.sinaimg.cn/mw690/bcf17fd9gy1g66mhoyxzrj20qg0gh772.jpg">
 
 
 
@@ -130,7 +138,7 @@
 
 
 
-  <link rel="canonical" href="https://github.com/SenSe-HJ/tags/">
+  <link rel="canonical" href="https://github.com/SenSe-HJ/python问题：tkinter多窗口显示异常">
 
 
 
@@ -144,7 +152,7 @@
 
 <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 
-  <title>'tags' | SenSe-HJ</title>
+  <title>python问题：tkinter多窗口显示异常 | SenSe-HJ</title>
   
 
 
@@ -253,40 +261,188 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://github.com/SenSe-HJ/python问题：tkinter多窗口显示异常">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="HJ">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SenSe-HJ">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">'tags'</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 4 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/python基础/" style="font-size: 30px; color: #111">python基础</a> <a href="/tags/python应用/" style="font-size: 12px; color: #ccc">python应用</a> <a href="/tags/python提升/" style="font-size: 21px; color: #6f6f6f">python提升</a> <a href="/tags/算法图解/" style="font-size: 21px; color: #6f6f6f">算法图解</a>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">python问题：tkinter多窗口显示异常</h1>
         
-      </div>
+
+        <div class="post-meta">
+
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-20T16:29:35+08:00">
+                2019-08-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python问题与解决/" itemprop="url" rel="index">
+                    <span itemprop="name">python问题与解决</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h3 id="问题详述："><a href="#问题详述：" class="headerlink" title="问题详述："></a>问题详述：</h3><p>在使用tkinter模块创建多个窗口时，在窗口内容代码没有错误的前提下，除第一个窗口外其他窗口显示异常<br>如本来想依次生成这样子两个窗口：</p>
+<p><img src="http://wx3.sinaimg.cn/mw690/bcf17fd9gy1g66mhoyxzrj20qg0gh772.jpg" alt="正确窗口1"></p>
+<p><img src="http://wx2.sinaimg.cn/mw690/bcf17fd9gy1g66mhq4tyij20in027wf4.jpg" alt="正确窗口2"></p>
+<p><br>但实际第二个窗口长这样：</p>
+<p><img src="http://wx2.sinaimg.cn/mw690/bcf17fd9gy1g66mhpjbwwj20ie0253z5.jpg" alt="正确窗口1"></p>
+<h3 id="产生该问题的原因："><a href="#产生该问题的原因：" class="headerlink" title="产生该问题的原因："></a>产生该问题的原因：<br></h3><p>产生这种问题是因为<strong>前一个窗口只是退出（quit），但没有销毁（destroy）</strong>。没有销毁前一个窗口，则会引起后一个窗口异常。</p>
+<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>在窗口代码的末尾输入代码<strong>“窗口名.destroy()”</strong>来销毁窗口</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">master = Tk()</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">master.destroy()</span><br></pre></td></tr></table></figure>
+
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------　　　　本文结束　<i class="fa fa-heart"></i>　感谢您的阅读 <i class="fa fa-heart"></i> 若有不足请指教　　　　-------------</div>
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python提升/" rel="tag"># python提升</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/python应用：hexo 文章发布" rel="next" title="python应用：hexo 文章发布">
+                <i class="fa fa-chevron-left"></i> python应用：hexo 文章发布
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/python问题：读取md文件报错or保存md文件显示乱码" rel="prev" title="python问题：读取md文件报错or保存md文件显示乱码">
+                python问题：读取md文件报错or保存md文件显示乱码 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </div></article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -324,8 +480,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -403,6 +568,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题详述："><span class="nav-number">1.</span> <span class="nav-text">问题详述：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#产生该问题的原因："><span class="nav-number">2.</span> <span class="nav-text">产生该问题的原因：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决方法："><span class="nav-number">3.</span> <span class="nav-text">解决方法：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

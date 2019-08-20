@@ -82,7 +82,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="算法图解,">
 
 
 
@@ -93,17 +93,18 @@
 
 
 
-<meta name="description" content="关于作者 2019年本科毕业于福州大学土木工程专业道路与桥梁方向 如今于同济大学建筑与土木工程桥梁与隧道工程攻读硕士学位 创建本站的原因：准备在这方属于自己的天地中，留下自己在学习编程与桥梁方面的认识与体悟   联系方式： QQ：909773761 CSDN：https://blog.csdn.net/qq_37111647   最后将《Dream Of Life》的歌词片段送给到此的游客们回想过">
-<meta property="og:type" content="website">
-<meta property="og:title" content="&#39;SenSe-HJ&#39;">
-<meta property="og:url" content="https://github.com/SenSe-HJ/about_me/index.html">
+<meta name="description" content="一、散列表的构成散列表是由散列函数与数组组合而成的。 散列表的工作原理（流程）如下：  键（key）输入到散列函数中，得到唯一的散列值（唯一是理想情况下）； 将这个散列值作为数组的索引； 通过索引和数组的存储地址，可以找到唯一的内存地址，从而进行值（value）的相关操作。  二、散列表的用途2.1 用于查找（最基础的用途）由于散列表的工作原理，在平均情况下散列表的查找时间并不会随操作数的增加而增">
+<meta name="keywords" content="算法图解">
+<meta property="og:type" content="article">
+<meta property="og:title" content="算法图解05：散列表">
+<meta property="og:url" content="https://github.com/SenSe-HJ/算法05-散列表">
 <meta property="og:site_name" content="SenSe-HJ">
-<meta property="og:description" content="关于作者 2019年本科毕业于福州大学土木工程专业道路与桥梁方向 如今于同济大学建筑与土木工程桥梁与隧道工程攻读硕士学位 创建本站的原因：准备在这方属于自己的天地中，留下自己在学习编程与桥梁方面的认识与体悟   联系方式： QQ：909773761 CSDN：https://blog.csdn.net/qq_37111647   最后将《Dream Of Life》的歌词片段送给到此的游客们回想过">
+<meta property="og:description" content="一、散列表的构成散列表是由散列函数与数组组合而成的。 散列表的工作原理（流程）如下：  键（key）输入到散列函数中，得到唯一的散列值（唯一是理想情况下）； 将这个散列值作为数组的索引； 通过索引和数组的存储地址，可以找到唯一的内存地址，从而进行值（value）的相关操作。  二、散列表的用途2.1 用于查找（最基础的用途）由于散列表的工作原理，在平均情况下散列表的查找时间并不会随操作数的增加而增">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-15T12:34:26.874Z">
+<meta property="og:updated_time" content="2019-08-15T07:40:58.772Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="&#39;SenSe-HJ&#39;">
-<meta name="twitter:description" content="关于作者 2019年本科毕业于福州大学土木工程专业道路与桥梁方向 如今于同济大学建筑与土木工程桥梁与隧道工程攻读硕士学位 创建本站的原因：准备在这方属于自己的天地中，留下自己在学习编程与桥梁方面的认识与体悟   联系方式： QQ：909773761 CSDN：https://blog.csdn.net/qq_37111647   最后将《Dream Of Life》的歌词片段送给到此的游客们回想过">
+<meta name="twitter:title" content="算法图解05：散列表">
+<meta name="twitter:description" content="一、散列表的构成散列表是由散列函数与数组组合而成的。 散列表的工作原理（流程）如下：  键（key）输入到散列函数中，得到唯一的散列值（唯一是理想情况下）； 将这个散列值作为数组的索引； 通过索引和数组的存储地址，可以找到唯一的内存地址，从而进行值（value）的相关操作。  二、散列表的用途2.1 用于查找（最基础的用途）由于散列表的工作原理，在平均情况下散列表的查找时间并不会随操作数的增加而增">
 
 
 
@@ -133,7 +134,7 @@
 
 
 
-  <link rel="canonical" href="https://github.com/SenSe-HJ/about_me/">
+  <link rel="canonical" href="https://github.com/SenSe-HJ/算法05-散列表">
 
 
 
@@ -147,7 +148,7 @@
 
 <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 
-  <title>'SenSe-HJ' | SenSe-HJ</title>
+  <title>算法图解05：散列表 | SenSe-HJ</title>
   
 
 
@@ -256,45 +257,252 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://github.com/SenSe-HJ/算法05-散列表">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="HJ">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SenSe-HJ">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">'SenSe-HJ'</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <h1 id="关于作者"><a href="#关于作者" class="headerlink" title="关于作者"></a>关于作者</h1><ul>
-<li>2019年本科毕业于福州大学土木工程专业道路与桥梁方向</li>
-<li>如今于同济大学建筑与土木工程桥梁与隧道工程攻读硕士学位</li>
-<li>创建本站的原因：<strong>准备在这方属于自己的天地中，留下自己在学习编程与桥梁方面的认识与体悟</strong></li>
+          <h1 class="post-title" itemprop="name headline">算法图解05：散列表</h1>
+        
+
+        <div class="post-meta">
+
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-12T10:00:00+08:00">
+                2019-08-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/算法图解/" itemprop="url" rel="index">
+                    <span itemprop="name">算法图解</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="一、散列表的构成"><a href="#一、散列表的构成" class="headerlink" title="一、散列表的构成"></a>一、散列表的构成</h2><p>散列表是<strong>由散列函数与数组组合而成的</strong>。</p>
+<p>散列表的工作原理（流程）如下：</p>
+<ul>
+<li>键（key）输入到散列函数中，得到<strong>唯一的散列值</strong>（唯一是理想情况下）；</li>
+<li>将这个散列值<strong>作为数组的索引</strong>；</li>
+<li>通过索引和数组的存储地址，可以找到<strong>唯一的内存地址</strong>，从而进行值（value）的相关操作。</li>
 </ul>
-<hr>
-<h1 id="联系方式："><a href="#联系方式：" class="headerlink" title="联系方式："></a>联系方式：</h1><ul>
-<li>QQ：909773761</li>
-<li>CSDN：<a href="https://blog.csdn.net/qq_37111647" target="_blank" rel="noopener">https://blog.csdn.net/qq_37111647</a></li>
-</ul>
-<hr>
-<h1 id="最后将《Dream-Of-Life》的歌词片段送给到此的游客们"><a href="#最后将《Dream-Of-Life》的歌词片段送给到此的游客们" class="headerlink" title="最后将《Dream Of Life》的歌词片段送给到此的游客们"></a>最后将《Dream Of Life》的歌词片段送给到此的游客们</h1><p>回想过去的悔恨，强忍泪水的那一天<br><br>孤独的数量也会逐渐变成动力的故事<br><br>即使跨越而过，转眼便又是一个全新的现实<br><br>我会亲手开创一片崭新的未来<br><br>只因我心底还有那个想要牢牢守护的梦想<br></p>
+<h2 id="二、散列表的用途"><a href="#二、散列表的用途" class="headerlink" title="二、散列表的用途"></a>二、散列表的用途</h2><h3 id="2-1-用于查找（最基础的用途）"><a href="#2-1-用于查找（最基础的用途）" class="headerlink" title="2.1 用于查找（最基础的用途）"></a>2.1 用于查找（最基础的用途）</h3><p>由于散列表的工作原理，在<strong>平均情况下</strong>散列表的<strong>查找时间并不会随操作数的增加而增加</strong>，故散列表的速度为<strong>O(1)</strong>。<br><br>故散列表<strong>很适合于随机查找</strong>。<br></p>
+<a id="more"></a>
 
-        
-      </div>
-      
-      
+<p>散列表、数组、链表运行速度汇总如下：</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">散列表（平均情况）</th>
+<th align="center">散列表（最糟糕情况）</th>
+<th align="center">数组</th>
+<th align="center">链表</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">查找</td>
+<td align="center">O(1)</td>
+<td align="center">O(n)</td>
+<td align="center">O(1)</td>
+<td align="center">o(n)</td>
+</tr>
+<tr>
+<td align="center">插入</td>
+<td align="center">O(1)</td>
+<td align="center">O(n)</td>
+<td align="center">O(n)</td>
+<td align="center">O(1)</td>
+</tr>
+<tr>
+<td align="center">删除</td>
+<td align="center">O(1)</td>
+<td align="center">O(n)</td>
+<td align="center">O(n)</td>
+<td align="center">O(1)</td>
+</tr>
+</tbody></table>
+<h3 id="2-2-用于网页缓存数据"><a href="#2-2-用于网页缓存数据" class="headerlink" title="2.2 用于网页缓存数据"></a>2.2 用于网页缓存数据</h3><p>首先简单介绍下“缓存”这个概念。</p>
+<ul>
+<li>对于常用的数据，本地（客户端）先保存下来（即缓存）；</li>
+<li>当访问本地保存的数据时，不需要访问服务端来获取相关数据，而直接从本地读取；</li>
+<li>而对于非本地保存的数据，再访问服务端来获取相关数据。</li>
+</ul>
+<p>而<strong>缓存的数据一般存储于散列表中</strong>，方便进行随机查找。<br>也就是说缓存数据是基于<strong>散列表查找性能好</strong>而升华的用途</p>
+<h3 id="2-3-用于检查是否重复"><a href="#2-3-用于检查是否重复" class="headerlink" title="2.3 用于检查是否重复"></a>2.3 用于检查是否重复</h3><p>由于散列表中的键（key）具有<strong>唯一的</strong>散列值的；<br>所以可以通过<strong>检查某个内容是否存在于散列表中</strong>，从而判定该项内容是否重复。</p>
+<h2 id="三、散列表的冲突问题"><a href="#三、散列表的冲突问题" class="headerlink" title="三、散列表的冲突问题"></a>三、散列表的冲突问题</h2><p>散列表的冲突问题指的是：</p>
+<ul>
+<li>由于<strong>不是</strong>每个散列函数都可以实现<strong>“输入值与散列值一一对应”</strong></li>
+<li>若不同键具有相同的散列值，则它们<strong>对应的内存地址相同</strong></li>
+<li>这就导致了具有相同散列值的键会<strong>覆盖</strong>前者键对应的值</li>
+<li>如A与B具有相同的散列值，则B=b会覆盖掉原来的A=a</li>
+</ul>
+<p>解决冲突问题的<strong>最简单方法</strong>是：</p>
+<ul>
+<li>如果两个键映射到同一个位置，则在这个位置<strong>存储成一个链表</strong></li>
+</ul>
+<p>但这样做，可能会形成散列表<strong>最糟糕的情况</strong></p>
+<ul>
+<li>即<strong>所有键的散列值均相同，映射至同一个地方</strong>；</li>
+<li>这样子的散列表其实就就是<strong>链表披着数组的皮</strong>，实际就是个链表。</li>
+</ul>
+<h2 id="四、散列表的性能"><a href="#四、散列表的性能" class="headerlink" title="四、散列表的性能"></a>四、散列表的性能</h2><p>散列表<strong>产生冲突的概率及解决冲突的方法</strong>决定了散列表的性能，故散列表的性能受以下三个因素影响：</p>
+<ul>
+<li><strong>散列函数</strong>：<br><br>良好的散列函数，可以使大多数的键对应的散列值是唯一的，可以有效避免冲突的产生；</li>
+<li><strong>装填因子</strong>:<br><br>装填因子=散列表包含的元素个数/散列表中位置总数，即<strong>表示散列表中元素的装满程度</strong>；<br><br>故<strong>装填因子越低，发生冲突的可能性越小</strong>；<br><br>（装填因子越低，散列表中的空位越多，键映射到空位的概率越大，发生的冲突的可能性则越小）<br>一个不错的经验规则：<strong>一旦填装因子大于0.7，就调整散列表的长度</strong>。</li>
+<li><strong>处理冲突的方法</strong>：<br></li>
+</ul>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------　　　　本文结束　<i class="fa fa-heart"></i>　感谢您的阅读 <i class="fa fa-heart"></i> 若有不足请指教　　　　-------------</div>
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/算法图解/" rel="tag"># 算法图解</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/算法02-数组与链表" rel="next" title="算法图解02：数组与链表">
+                <i class="fa fa-chevron-left"></i> 算法图解02：数组与链表
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/算法-P、NP、NPC、NPH问题总结" rel="prev" title="算法图解番外篇：P、NP、NPC、NPH问题汇总">
+                算法图解番外篇：P、NP、NPC、NPH问题汇总 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </div></article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -430,7 +638,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于作者"><span class="nav-number">1.</span> <span class="nav-text">关于作者</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#联系方式："><span class="nav-number">2.</span> <span class="nav-text">联系方式：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#最后将《Dream-Of-Life》的歌词片段送给到此的游客们"><span class="nav-number">3.</span> <span class="nav-text">最后将《Dream Of Life》的歌词片段送给到此的游客们</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、散列表的构成"><span class="nav-number">1.</span> <span class="nav-text">一、散列表的构成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、散列表的用途"><span class="nav-number">2.</span> <span class="nav-text">二、散列表的用途</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-用于查找（最基础的用途）"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 用于查找（最基础的用途）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-用于网页缓存数据"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 用于网页缓存数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-用于检查是否重复"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 用于检查是否重复</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、散列表的冲突问题"><span class="nav-number">3.</span> <span class="nav-text">三、散列表的冲突问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、散列表的性能"><span class="nav-number">4.</span> <span class="nav-text">四、散列表的性能</span></a></li></ol></div>
             
 
           </div>
