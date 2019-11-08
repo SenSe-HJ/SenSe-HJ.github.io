@@ -82,7 +82,7 @@
 
 
 
-  <meta name="keywords" content="python提升,">
+  <meta name="keywords" content="python基础,">
 
 
 
@@ -93,22 +93,18 @@
 
 
 
-<meta name="description" content="问题详述：在使用tkinter模块创建多个窗口时，在窗口内容代码没有错误的前提下，除第一个窗口外其他窗口显示异常如本来想依次生成这样子两个窗口：   但实际第二个窗口长这样：  产生该问题的原因：产生这种问题是因为前一个窗口只是退出（quit），但没有销毁（destroy）。没有销毁前一个窗口，则会引起后一个窗口异常。 解决方法：在窗口代码的末尾输入代码“窗口名.destroy()”来销毁窗口 1">
-<meta name="keywords" content="python提升">
+<meta name="description" content="本文章主要介绍如何通过xlwings包来将数据存储于Excel中，故只会对主要内容进行介绍。更详细的内容可以参考源代码中的解释。 app、book、sheet与range的含义 app指的是excel程序，可通过进程ID（PID）指定excel程序 book指的是execl工作簿，可通过xlsx文件名进行访问 sheet指的是excel工作表，可通过表名进行访问 range指的是excel的单元格">
+<meta name="keywords" content="python基础">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python问题：tkinter多窗口显示异常">
-<meta property="og:url" content="https://github.com/SenSe-HJ/python问题：tkinter多窗口显示异常/index.html">
+<meta property="og:title" content="使用xlwings将数据储存于Excel">
+<meta property="og:url" content="https://github.com/SenSe-HJ/使用xlwings将数据储存于Excel/index.html">
 <meta property="og:site_name" content="SenSe-HJ">
-<meta property="og:description" content="问题详述：在使用tkinter模块创建多个窗口时，在窗口内容代码没有错误的前提下，除第一个窗口外其他窗口显示异常如本来想依次生成这样子两个窗口：   但实际第二个窗口长这样：  产生该问题的原因：产生这种问题是因为前一个窗口只是退出（quit），但没有销毁（destroy）。没有销毁前一个窗口，则会引起后一个窗口异常。 解决方法：在窗口代码的末尾输入代码“窗口名.destroy()”来销毁窗口 1">
+<meta property="og:description" content="本文章主要介绍如何通过xlwings包来将数据存储于Excel中，故只会对主要内容进行介绍。更详细的内容可以参考源代码中的解释。 app、book、sheet与range的含义 app指的是excel程序，可通过进程ID（PID）指定excel程序 book指的是execl工作簿，可通过xlsx文件名进行访问 sheet指的是excel工作表，可通过表名进行访问 range指的是excel的单元格">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/bcf17fd9gy1g66mhoyxzrj20qg0gh772.jpg">
-<meta property="og:image" content="http://wx2.sinaimg.cn/mw690/bcf17fd9gy1g66mhq4tyij20in027wf4.jpg">
-<meta property="og:image" content="http://wx2.sinaimg.cn/mw690/bcf17fd9gy1g66mhpjbwwj20ie0253z5.jpg">
-<meta property="og:updated_time" content="2019-08-20T17:48:10.940Z">
+<meta property="og:updated_time" content="2019-11-08T15:36:05.489Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python问题：tkinter多窗口显示异常">
-<meta name="twitter:description" content="问题详述：在使用tkinter模块创建多个窗口时，在窗口内容代码没有错误的前提下，除第一个窗口外其他窗口显示异常如本来想依次生成这样子两个窗口：   但实际第二个窗口长这样：  产生该问题的原因：产生这种问题是因为前一个窗口只是退出（quit），但没有销毁（destroy）。没有销毁前一个窗口，则会引起后一个窗口异常。 解决方法：在窗口代码的末尾输入代码“窗口名.destroy()”来销毁窗口 1">
-<meta name="twitter:image" content="http://wx3.sinaimg.cn/mw690/bcf17fd9gy1g66mhoyxzrj20qg0gh772.jpg">
+<meta name="twitter:title" content="使用xlwings将数据储存于Excel">
+<meta name="twitter:description" content="本文章主要介绍如何通过xlwings包来将数据存储于Excel中，故只会对主要内容进行介绍。更详细的内容可以参考源代码中的解释。 app、book、sheet与range的含义 app指的是excel程序，可通过进程ID（PID）指定excel程序 book指的是execl工作簿，可通过xlsx文件名进行访问 sheet指的是excel工作表，可通过表名进行访问 range指的是excel的单元格">
 
 
 
@@ -138,7 +134,7 @@
 
 
 
-  <link rel="canonical" href="https://github.com/SenSe-HJ/python问题：tkinter多窗口显示异常/">
+  <link rel="canonical" href="https://github.com/SenSe-HJ/使用xlwings将数据储存于Excel/">
 
 
 
@@ -152,7 +148,7 @@
 
 <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 
-  <title>python问题：tkinter多窗口显示异常 | SenSe-HJ</title>
+  <title>使用xlwings将数据储存于Excel | SenSe-HJ</title>
   
 
 
@@ -273,7 +269,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/SenSe-HJ/python问题：tkinter多窗口显示异常/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/SenSe-HJ/使用xlwings将数据储存于Excel/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="HJ">
@@ -290,7 +286,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">python问题：tkinter多窗口显示异常</h1>
+          <h1 class="post-title" itemprop="name headline">使用xlwings将数据储存于Excel</h1>
         
 
         <div class="post-meta">
@@ -303,8 +299,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-20T16:29:35+08:00">
-                2019-08-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-21T02:01:25+08:00">
+                2019-09-21
               </time>
             
 
@@ -326,8 +322,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/python问题与解决/" itemprop="url" rel="index">
-                    <span itemprop="name">python问题与解决</span>
+                  <a href="/categories/python基础/" itemprop="url" rel="index">
+                    <span itemprop="name">python基础</span>
                   </a>
                 </span>
 
@@ -363,14 +359,52 @@
       
 
       
-        <h3 id="问题详述："><a href="#问题详述：" class="headerlink" title="问题详述："></a>问题详述：</h3><p>在使用tkinter模块创建多个窗口时，在窗口内容代码没有错误的前提下，除第一个窗口外其他窗口显示异常<br>如本来想依次生成这样子两个窗口：</p>
-<p><img src="http://wx3.sinaimg.cn/mw690/bcf17fd9gy1g66mhoyxzrj20qg0gh772.jpg" alt="正确窗口1"></p>
-<p><img src="http://wx2.sinaimg.cn/mw690/bcf17fd9gy1g66mhq4tyij20in027wf4.jpg" alt="正确窗口2"></p>
-<p><br>但实际第二个窗口长这样：</p>
-<p><img src="http://wx2.sinaimg.cn/mw690/bcf17fd9gy1g66mhpjbwwj20ie0253z5.jpg" alt="正确窗口1"></p>
-<h3 id="产生该问题的原因："><a href="#产生该问题的原因：" class="headerlink" title="产生该问题的原因："></a>产生该问题的原因：<br></h3><p>产生这种问题是因为<strong>前一个窗口只是退出（quit），但没有销毁（destroy）</strong>。没有销毁前一个窗口，则会引起后一个窗口异常。</p>
-<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>在窗口代码的末尾输入代码<strong>“窗口名.destroy()”</strong>来销毁窗口</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">master = Tk()</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">master.destroy()</span><br></pre></td></tr></table></figure>
+        <p>本文章主要介绍如何通过xlwings包来将数据存储于Excel中，故只会对主要内容进行介绍。更详细的内容可以参考源代码中的解释。</p>
+<h3 id="app、book、sheet与range的含义"><a href="#app、book、sheet与range的含义" class="headerlink" title="app、book、sheet与range的含义"></a>app、book、sheet与range的含义</h3><ol>
+<li>app指的是excel程序，可通过进程ID（PID）指定excel程序</li>
+<li>book指的是execl工作簿，可通过xlsx文件名进行访问</li>
+<li>sheet指的是excel工作表，可通过表名进行访问</li>
+<li>range指的是excel的单元格组</li>
+</ol>
+<h3 id="一、模块的安装"><a href="#一、模块的安装" class="headerlink" title="一、模块的安装"></a>一、模块的安装</h3><h4 id="1-安装xlwings"><a href="#1-安装xlwings" class="headerlink" title="1.安装xlwings"></a>1.安装xlwings</h4><ul>
+<li>先进入python目录下的Script文件夹中（若已将pip路径添加到path中，可忽略这一步。这是考虑电脑中存在多版本python的情况下，pip指代不清的问题）</li>
+<li>在这个文件夹下打开cmd窗口</li>
+<li>输入“pip install xlwings”进行安装</li>
+</ul>
+<h4 id="2-安装pywin32"><a href="#2-安装pywin32" class="headerlink" title="2.安装pywin32"></a>2.安装pywin32</h4><ul>
+<li>cmd输入“pip install pywin32==233”进行安装（目前xlwings不支持pywin32的235版本，使用需要制定版本为233or234）</li>
+</ul>
+<h3 id="二、-工作簿的操作"><a href="#二、-工作簿的操作" class="headerlink" title="二、 工作簿的操作"></a>二、 工作簿的操作</h3><h4 id="1-新建、打开工作簿"><a href="#1-新建、打开工作簿" class="headerlink" title="1. 新建、打开工作簿"></a>1. 新建、打开工作簿</h4><p>xlwings模块可以通过<strong>生成一个Book类的实例对象</strong>来新建或打开工作簿。<br></p>
+<ul>
+<li>若不输入路径实参则新建工作牌</li>
+<li>若输入路径实参则打开已有工作簿。路径实参可以使相对路径也可以是绝对路径。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> xlwings <span class="keyword">as</span> xw</span><br><span class="line"></span><br><span class="line">wb = xw.Book()                             <span class="comment"># 实例化一个工作簿对象，即可新建一个工作簿</span></span><br><span class="line">wb = xw.Book(<span class="string">"mybook.xlsx"</span>)                <span class="comment"># 使用相对路径打开已有工作簿</span></span><br><span class="line">wb = xw.Book(<span class="string">r"C:\Users\SenSe\Desktop\mybook.xlsx"</span>)   <span class="comment"># 使用绝对路径打开已有工作簿</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-保存与关闭工作簿"><a href="#2-保存与关闭工作簿" class="headerlink" title="2.保存与关闭工作簿"></a>2.保存与关闭工作簿</h4><p>使用Book对象的save（[path])与close()方法可以进行保存于关闭操作。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>wb = xw.Book()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>wb.save(<span class="string">r'C:\Users\SenSe\Desktop\231.xlsx'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>wb.close()</span><br></pre></td></tr></table></figure>
+
+<h3 id="三、工作表的操作"><a href="#三、工作表的操作" class="headerlink" title="三、工作表的操作"></a>三、工作表的操作</h3><p>使用Book对象的sheets方法生成一个Sheets类对象，通过调用Sheets类对象来新建or选择工作表</p>
+<h4 id="1-新建工作表"><a href="#1-新建工作表" class="headerlink" title="1. 新建工作表"></a>1. 新建工作表</h4><p>通过Sheets的add方法来新建工作表</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sht = wb.sheets.add(name=<span class="string">'Sheet2'</span>, before=<span class="string">'Sheet3'</span>, after=<span class="string">'Sheet1'</span>) <span class="comment">#before 和 after可以不赋值，默认值为0</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-选择当前工作表"><a href="#2-选择当前工作表" class="headerlink" title="2. 选择当前工作表"></a>2. 选择当前工作表</h4><p>通过Sheets的active方法来选择当前工作表</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sht = wb.sheets.active <span class="comment">#可以不用带（）</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>注意：Sheets类的active方法用了@property修饰符修饰，将active方法作为属性来调用。故active后面不需要加括号即可调用。</li>
+</ul>
+<h4 id="3-通过名称或索引选择工作表"><a href="#3-通过名称或索引选择工作表" class="headerlink" title="3. 通过名称或索引选择工作表"></a>3. 通过名称或索引选择工作表</h4><p>可以利用Sheets直接通过索引或名称选择工作表</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sht = wb.sheets[<span class="string">"Sheet1"</span>]  <span class="comment"># 通过名称来选择工作表</span></span><br><span class="line">sht = wb.sheets[<span class="number">1</span>]  <span class="comment"># 通过名称来选择工作表</span></span><br></pre></td></tr></table></figure>
+
+<p>注：这里Sheets类时通过<strong>call</strong>魔法方法来是其实例对象还能像函数应用通过括号来调用实现功能。</p>
+<h4 id="4-删除工作表"><a href="#4-删除工作表" class="headerlink" title="4. 删除工作表"></a>4. 删除工作表</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">del</span> wb.Sheets[<span class="string">'Sheet1'</span>]  <span class="comment"># 通过名称来删除工作表</span></span><br><span class="line"><span class="keyword">del</span> wb.Sheets[<span class="number">0</span>] <span class="comment"># 通过名称来删除工作表</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="四、单元格的操作"><a href="#四、单元格的操作" class="headerlink" title="四、单元格的操作"></a>四、单元格的操作</h3><h4 id="1-选择单元格"><a href="#1-选择单元格" class="headerlink" title="1.选择单元格"></a>1.选择单元格</h4><p>可以通过sht的range方法来生成一个range对象</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">rng1 = sht.range(<span class="string">"a1"</span>) <span class="comment"># 根据编号选择单元格</span></span><br><span class="line">rng2 = sht.range((<span class="number">1</span>,<span class="number">1</span>)) <span class="comment"># 根据坐标选择单元格</span></span><br><span class="line">rng3 = sht.range(<span class="string">"a1:b5"</span>) <span class="comment"># 选择a1到b5区域的单元格群</span></span><br><span class="line">rng4 = sht.range(<span class="string">"a1"</span>,<span class="string">"b5"</span>) <span class="comment"># 选择a1到b5区域的单元格群</span></span><br><span class="line">rng5 = sht.range((<span class="number">1</span>,<span class="number">1</span>),(<span class="number">2</span>,<span class="number">5</span>)) <span class="comment"># 选择a1到b5区域的单元格群</span></span><br><span class="line"><span class="comment"># 选择单元格功能比VBA灵活多了</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-给单元格赋值"><a href="#2-给单元格赋值" class="headerlink" title="2. 给单元格赋值"></a>2. 给单元格赋值</h4><p>可以通过Range类的value方法进行赋值。其中可以通过赋值为一个列表对该单元格附近的单元格进行一起赋值</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">rng = sht.range(<span class="string">"a1"</span>)</span><br><span class="line">rng.value = <span class="number">3</span> <span class="comment">#使A1单元格为3</span></span><br><span class="line">rng.value = [<span class="number">3</span>,<span class="number">5</span>,<span class="number">7</span>] <span class="comment">#使A1单元格为3、A2单元格为5、A3单元格为7</span></span><br><span class="line">rng.value = [[<span class="number">3</span>,<span class="number">5</span>,<span class="number">7</span>],[<span class="number">2</span>,<span class="number">4</span>,<span class="number">6</span>]] <span class="comment">#使A1单元格为3、A2单元格为5、A3单元格为7;B1单元格为2、B2单元格为4、B3单元格为6</span></span><br></pre></td></tr></table></figure>
 
 
       
@@ -398,7 +432,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/python提升/" rel="tag"># python提升</a>
+            <a href="/tags/python基础/" rel="tag"># python基础</a>
           
         </div>
       
@@ -411,8 +445,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/python应用：hexo 文章发布/" rel="next" title="python应用：hexo 文章发布">
-                <i class="fa fa-chevron-left"></i> python应用：hexo 文章发布
+              <a href="/python问题：读取md文件报错or保存md文件显示乱码/" rel="next" title="python问题：读取md文件报错or保存md文件显示乱码">
+                <i class="fa fa-chevron-left"></i> python问题：读取md文件报错or保存md文件显示乱码
               </a>
             
           </div>
@@ -420,10 +454,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/python问题：读取md文件报错or保存md文件显示乱码/" rel="prev" title="python问题：读取md文件报错or保存md文件显示乱码">
-                python问题：读取md文件报错or保存md文件显示乱码 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -578,7 +608,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题详述："><span class="nav-number">1.</span> <span class="nav-text">问题详述：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#产生该问题的原因："><span class="nav-number">2.</span> <span class="nav-text">产生该问题的原因：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决方法："><span class="nav-number">3.</span> <span class="nav-text">解决方法：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#app、book、sheet与range的含义"><span class="nav-number">1.</span> <span class="nav-text">app、book、sheet与range的含义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一、模块的安装"><span class="nav-number">2.</span> <span class="nav-text">一、模块的安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-安装xlwings"><span class="nav-number">2.1.</span> <span class="nav-text">1.安装xlwings</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-安装pywin32"><span class="nav-number">2.2.</span> <span class="nav-text">2.安装pywin32</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、-工作簿的操作"><span class="nav-number">3.</span> <span class="nav-text">二、 工作簿的操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-新建、打开工作簿"><span class="nav-number">3.1.</span> <span class="nav-text">1. 新建、打开工作簿</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-保存与关闭工作簿"><span class="nav-number">3.2.</span> <span class="nav-text">2.保存与关闭工作簿</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、工作表的操作"><span class="nav-number">4.</span> <span class="nav-text">三、工作表的操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-新建工作表"><span class="nav-number">4.1.</span> <span class="nav-text">1. 新建工作表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-选择当前工作表"><span class="nav-number">4.2.</span> <span class="nav-text">2. 选择当前工作表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-通过名称或索引选择工作表"><span class="nav-number">4.3.</span> <span class="nav-text">3. 通过名称或索引选择工作表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-删除工作表"><span class="nav-number">4.4.</span> <span class="nav-text">4. 删除工作表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、单元格的操作"><span class="nav-number">5.</span> <span class="nav-text">四、单元格的操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-选择单元格"><span class="nav-number">5.1.</span> <span class="nav-text">1.选择单元格</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-给单元格赋值"><span class="nav-number">5.2.</span> <span class="nav-text">2. 给单元格赋值</span></a></li></ol></li></ol></div>
             
 
           </div>
